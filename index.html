@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="">
+<title>CoderStats - View Statistics for Millions of GitHub Users</title>
+<link rel="shortcut icon" href="/img/coderstats.png">
+<link rel="canonical" href="http://localhost:8080/" />
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="/compiled/style.css">
+</head>
+<body>
+<div class="container-full main">
+    <h1 class="logo">CoderStats - View Statistics for Millions of GitHub Users</h1>
+    <div class="box-search" id="search">
+        <form class="row" @submit.prevent>
+            <div class="col-10">
+                <input class="field" id="username" type="text" placeholder="GitHub user name" v-model="username">
+            </div>
+            <div class="col-2">
+                <button @click="coder" class="button">Get Stats</button>
+            </div>
+        </form>
+    </div>
+    <div v-if="events" class="padv" id="events">
+
+        <h2>Recently active users</h2>
+        <div class="flex">
+            <div v-for="user in users.slice(0, 10)" class="user">
+                <a v-bind:href="'/github#' + user.key">
+                    <img :src="user.values[0].actor.avatar_url" :alt="user.key">
+                    <i class="fa fa-user" aria-hidden="true"></i> {{ user.key }}
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer class="container">
+<p><a href="/">CoderStats</a> is a free service that displays statistics for coders with public open source code repositories.<br>
+<a href="https://chrome.google.com/webstore/detail/necogepejonacpphmlmcagmbjaogpbng">Chrome Extension</a> • <a href="https://addons.mozilla.org/en-US/firefox/addon/coderstats/">Firefox Add-on</a> • <a href="https://teespring.com/stores/codershirts" title="T-Shirts, hoodies, mugs and stickers for coders">CoderShirts Store</a>
+</footer>
+
+<script src="//unpkg.com/vue@2.4.4/dist/vue.min.js"></script>
+<script src="//unpkg.com/vue-resource@1.3.4/dist/vue-resource.min.js"></script>
+<script src="//d3js.org/d3-collection.v1.min.js"></script>
+<script src="//d3js.org/d3-array.v1.min.js"></script>
+
+<script src="/compiled/events.js"></script>
+<script src="/compiled/search.js"></script>
+</body>
+</html>
