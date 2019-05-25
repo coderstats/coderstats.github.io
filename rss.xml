@@ -3,7 +3,7 @@
 <channel><title>RSS Feed</title>
     <link>http://localhost:8080</link>
     <description>RSS Feed</description>
-    <lastBuildDate>Sun, 26 May 2019 01:20:06 </lastBuildDate>
+    <lastBuildDate>Sun, 26 May 2019 01:20:51 </lastBuildDate>
     <generator>Logya</generator>
     <docs>http://blogs.law.harvard.edu/tech/rss</docs>
     <item>
