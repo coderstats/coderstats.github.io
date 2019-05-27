@@ -15,7 +15,7 @@ let events = new Vue({
     methods: {
         fetchEvents: function () {
             let url = 'https://api.github.com/events';
-            //url = '/data/events.json';
+            url = '/data/events.json'; // DEV
             this.$http.get(url).then(response => {
                 this.response = response;
                 this.events = response.body;

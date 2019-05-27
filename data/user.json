@@ -1,7 +1,8 @@
 {
   "login": "yaph",
   "id": 60051,
-  "avatar_url": "https://avatars.githubusercontent.com/u/60051?v=3",
+  "node_id": "MDQ6VXNlcjYwMDUx",
+  "avatar_url": "https://avatars3.githubusercontent.com/u/60051?v=4",
   "gravatar_id": "",
   "url": "https://api.github.com/users/yaph",
   "html_url": "https://github.com/yaph",
@@ -17,16 +18,16 @@
   "type": "User",
   "site_admin": false,
   "name": "Ramiro Gómez",
-  "company": "Consultant",
+  "company": "@exploringdata",
   "blog": "http://ramiro.org/",
   "location": "Berlin, Germany",
   "email": null,
-  "hireable": true,
+  "hireable": null,
   "bio": null,
-  "public_repos": 131,
+  "public_repos": 94,
   "public_gists": 51,
-  "followers": 131,
-  "following": 66,
+  "followers": 155,
+  "following": 69,
   "created_at": "2009-03-04T12:09:51Z",
-  "updated_at": "2017-01-05T20:31:30Z"
+  "updated_at": "2019-02-23T22:03:52Z"
 }
