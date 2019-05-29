@@ -3,13 +3,13 @@
 <channel><title>RSS Feed</title>
     <link>http://localhost:8080</link>
     <description>RSS Feed</description>
-    <lastBuildDate>Wed, 29 May 2019 01:23:37 </lastBuildDate>
+    <lastBuildDate>Wed, 29 May 2019 11:17:18 </lastBuildDate>
     <generator>Logya</generator>
     <docs>http://blogs.law.harvard.edu/tech/rss</docs>
     <item>
-        <title><![CDATA[CoderStats]]></title>
+        <title><![CDATA[CoderStats - Summary Statistics, Rankings and Repositories]]></title>
         <link><![CDATA[http://localhost:8080/github/]]></link>
-        <description><![CDATA[<p></p>]]></description>
+        <description><![CDATA[<p>Summary statistics, rankings and repositories about public source code repositories on GitHub.</p>]]></description>
         <guid><![CDATA[http://localhost:8080/github/]]></guid>
         <pubDate>Fri, 22 Sep 2017 22:12:48 </pubDate>
     </item>
